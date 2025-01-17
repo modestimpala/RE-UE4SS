@@ -6,6 +6,8 @@ message("Project: UE4SS")
 
 add_subdirectory("proxy_generator")
 
+set_property(TARGET patternsleuth_bind PROPERTY CARGO_TARGET_DIR ${CMAKE_BINARY_DIR}/Output/RelWithDebInfo/bin)
+
 # Release settings -> START
 option(UE4SS_LIB_BETA_IS_STARTED "Have beta releases started for the current major version" ON)
 option(UE4SS_LIB_IS_BETA "Is this a beta release" ON)
